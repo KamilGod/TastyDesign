@@ -1,0 +1,57 @@
+.parallax-window {
+    background: transparent;
+    width: 100%
+}
+
+.parallax-windowA {
+    background: transparent;
+    width: 10%;
+    height: 50%;
+}
+
+.parallax-mirror {
+    z-index: 1 !important;
+}
+
+.mainImg {
+    min-height: 30vh;
+}
+
+.secondImg {
+    min-height: 75vh;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom:75px;
+}
+
+.project {
+    padding: 10px;
+    margin: 20px;
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 220px;
+    background-color: #424242; ;
+    img {
+        width: 220px;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@keyframes brainOpacity {
+    0%   {opacity:0.3;}
+    50% {opacity:1;}
+    100% {opacity:0.3;}
+}

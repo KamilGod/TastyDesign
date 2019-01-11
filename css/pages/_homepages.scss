@@ -1,0 +1,416 @@
+::selection {
+    background-color: #31e2c2;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    height: 100%; // cursor: url("../img/cursor.png"), pointer;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #232323;
+    position: relative;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    transition: 0.3s all ease-in-out;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active {
+        left: -40vw;
+    }
+    .home {
+        color: #31e2c2;
+        position: fixed;
+        top: 20px;
+        left: 30px;
+        font-size: 30px;
+        z-index: 10;
+        p {
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: 'Staatliches', cursive;
+            text-decoration: underline;
+            text-decoration-color: #31e2c11e;
+        }
+        a {
+            text-decoration: none;
+            color: #424242;
+            line-height: 1px;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                color: #31e2c2;
+                text-decoration: none;
+            }
+        }
+    }
+    .logo {
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1000;
+        width: 230px;
+        transition: 0.3s all ease-in-out;
+        .lodTop img {
+            position: absolute;
+            top: -83px;
+            width: 220px;
+            transition: 0.3s all ease-in-out;
+        }
+        .lodBot img {
+            width: 220px;
+            transition: 0.3s all ease-in-out;
+        }
+        .txtLod {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.1s all ease-in-out;
+            img {
+                width: 220px;
+            }
+        }
+        &:hover .txtLod {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.9s all ease-in-out;
+        }
+        &:hover .lodTop img {
+            top: -210px;
+        }
+    }
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .scrollIcon {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: space-evenly;
+        left: 30px;
+        z-index: 2;
+        top: 50%;
+        transition: 0.3s all ease-in-out;
+        width: 3%;
+        &.active {
+            left: -40vw;
+        }
+        &:hover {
+            top: 54%;
+            color: #31e2c2;
+        }
+        i {
+            font-size: 50px;
+            color: #424242;
+        }
+        p {
+            writing-mode: tb-rl;
+            font-family: 'Staatliches', cursive;
+            font-size: 20px;
+            margin: 0px;
+            color: #31e2c2;
+            transition: 0.2s all ease-in-out;
+            &:hover {}
+        }
+    }
+    .navAndSocial {
+        right: 0px;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            a {
+                margin: 20px 20px 0px 20px;
+                font-size: 1.4em;
+                font-weight: 100;
+                color: #424242;
+                text-decoration: none;
+                font-family: 'Staatliches', cursive;
+                transition: 0.2s all ease-in-out;
+                &:hover {
+                    color: #31e2c2;
+                    text-decoration-line: line-through;
+                }
+            }
+        }
+        .socialMedias {
+            color: #424242;
+            align-self: flex-end;
+            font-size: 30px;
+            i {
+                margin: 0px 20px 20px 10px;
+                transition: 0.2s all ease-in-out;
+                &:hover {
+                    color: #31e2c2;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+    .aboutMe {
+        height: 100vh;
+        width: 100%;
+        font-family: 'Staatliches', cursive;
+        display: flex;
+        justify-content: center;
+    }
+    .skills {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        font-family: 'Staatliches', cursive;
+        background-color: #232323;
+        display: flex;
+        justify-content: center;
+        .contentSkills{
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: space-between;
+            .specialSign{
+                color:#31e2c2;
+                margin-left:10px;
+                margin-right:10px;
+            }
+        
+        .resumes{
+            width:40%;
+        }
+        .arrowBrain {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: flex-start;
+            position: absolute;
+            top:50%;
+            left:25%;
+            transform: translate(-50%,-50%);
+            img {
+                width: 350px;
+            
+                
+            }
+        }
+        .brain {
+            position: absolute;
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            table {
+                z-index: 200;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); // .topLeft{
+                //     border-bottom:1px solid #31e2c15e;
+                //     border-right:1px solid #31e2c15e;
+                // }
+                // .topRight{
+                //     border-bottom:1px solid #31e2c15e;
+                //     border-left:1px solid #31e2c15e;
+                // }
+                // .botLeft{
+                //     border-top:1px solid #31e2c15e;
+                //     border-right:1px solid #31e2c15e;
+                // }
+                // .botRight{
+                //     border-top:1px solid #31e2c15e;
+                //     border-left:1px solid #31e2c15e;
+                // }
+            }
+            img {
+                width: 115px;
+                opacity: 0.3;
+                display: block;
+                &:hover {
+                    opacity: 1;
+                    animation: brainOpacity 2s infinite;
+                }
+            }
+        }
+        }
+    }
+    .work {
+        height: 100%;
+        width: 100%;
+        font-family: 'Staatliches', cursive;
+        background-color: #2b2b2b;
+        display: flex;
+        justify-content: center;
+        .myWorks {
+            margin-top: 40px;
+            .nav-pills {
+                padding: 20px;
+            }
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: #a1a1a1;
+                    margin-right: 10px;
+                    font-size: 22px;
+                    &:hover {
+                        color: #31e2c2;
+                        text-decoration-line: line-through;
+                    }
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width:100%;
+            .showUp {
+                width: 200px;
+                height: 200px;
+                background-color: #424242;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                margin: 30px;
+                overflow: hidden;
+                flex-wrap: wrap;
+                &::before {
+                    content: "";
+                    background: #000;
+                    width: 200px;
+                    height: 200px;
+                    box-shadow: 17px 7px 25px 12px rgba(54, 54, 54, 1);
+                }
+            }
+        }
+    }
+    .content {
+        margin-top: 50px;
+        width: 1200px;
+        h1 {
+            color: #a1a1a1;
+            transition: 0.6s all ease-in-out;
+            &:hover {
+                text-decoration: #31e2c2 line-through;
+            }
+        }
+        p {
+            color: #a1a1a1;
+            transition: 0.6s all ease-in-out;
+        }
+    }
+}
+
+.contact {
+    position: absolute;
+    right: -40vw;
+    height: 100vh;
+    width: 40%;
+    transition: 0.3s all ease-in-out;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    &.active {
+        right: 0;
+    }
+    .petitForm {
+        position: relative;
+        background-color: #31e2c2;
+        border-radius: 3px;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        .close {
+            position: absolute;
+            right: 32px;
+            top: 32px;
+            width: 20px;
+            height: 20px;
+            opacity: 0.3;
+        }
+        .myInfo{
+            font-family: 'Staatliches', cursive;
+            font-size:20px;
+        }
+        .close:hover {
+            opacity: 1;
+        }
+        .close:before,
+        .close:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 20px;
+            width: 2px;
+            background-color: #333;
+        }
+        .close:before {
+            transform: rotate(45deg);
+        }
+        .close:after {
+            transform: rotate(-45deg);
+        }
+        #contact_form {
+            font-family: 'Staatliches', cursive;
+            margin-top: 30px;
+            input,
+            #message {
+                width: 100%;
+            }
+            #submit_button {
+                width: 30%;
+            }
+            textarea {
+                height: 200px;
+            }
+        }
+    }
+}
+
+footer{
+    width:100%;
+    height:150px;
+    background-color: #232323;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color:#424242;
+    .footerName{
+        color:#31e2c2;
+        margin-left:10px;
+    }
+    i{
+        font-size: 28px;
+        margin: 0px 10px 0px 10px;
+        &:hover{
+            color:#31e2c2;
+        }
+    }
+
+}
