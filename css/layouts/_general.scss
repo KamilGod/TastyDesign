@@ -49,6 +49,19 @@ canvas {
 .hidden {
     visibility: hidden;
 }
+@keyframes openIce{
+    0%{top:-210px;}
+    50%{top:-210px;}
+    100%{top:-83px;}
+
+}
+@keyframes openIceTxt{
+    0%{visibility: visible;opacity: 1;}
+    50%{visibility: visible;opacity: 1;}
+    100%{visibility: hidden;
+            opacity: 0;}
+
+}
 
 @keyframes brainOpacity {
     0%   {opacity:0.3;}

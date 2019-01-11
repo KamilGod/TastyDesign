@@ -69,15 +69,17 @@ header {
             top: -83px;
             width: 220px;
             transition: 0.3s all ease-in-out;
+            animation: openIce 5s ;
         }
         .lodBot img {
             width: 220px;
             transition: 0.3s all ease-in-out;
         }
         .txtLod {
-            visibility: hidden;
+            visibility: visible;
             opacity: 0;
             transition: 0.1s all ease-in-out;
+            animation: openIceTxt 3s ;
             img {
                 width: 220px;
             }
